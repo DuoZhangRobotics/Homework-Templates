@@ -41,9 +41,16 @@
 \renewcommand{\baselinestretch}{1.2}
 \makeatletter
 \newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\newcommand\norm[1]{\left\lVert#1\right\rVert}
+\newcommand\abs[1]{\left|#1\right|}
+\newcommand\brackets[1]{\left(#1\right)}
+\newcommand\interval[1]{\left[#1\right]}
 \newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
 \newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}
-\input{header.tex}
+\newcommand{\set}[1]{\left\{ #1 \right\}}
+\newcommand{\argmin}{\mathop{\mathrm{arg\,min}}}
+\newcommand{\argmax}{\mathop{\mathrm{arg\,max}}}
+\newcommand{\answer}{\textbf{Answer:}}
 \makeatother
 \title{Homework 0}
 % \title{Homework \rom{0}}
